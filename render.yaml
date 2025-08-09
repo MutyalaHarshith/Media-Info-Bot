@@ -1,0 +1,21 @@
+services:
+  - type: web
+    plan: free
+    name: Media-Info-Bot
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: python -m TelegramBot
+    repo: https://github.com/MutyalaHarshith/Media-Info-Bot
+    branch: main
+    autoDeploy: false
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: API_ID
+        sync: false
+      - key: API_HASH
+        sync: false
+      - key: SUDO_USERID
+        sync: false
+      - key: AUTHORIZED_CHATS
+        sync: false
