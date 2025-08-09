@@ -1,0 +1,45 @@
+{
+  "name": "Media Info Bot",
+  "description": "Telegram Bot for generating Mediainfo, Screenshots and Sample Video",
+  "keywords": [
+    "MediaInfo",
+    "Screenshots",
+    "SampleVideo",
+    "Bot",
+    "Telegram",
+    "ExistBots"
+  ],
+  "repository": "https://github.com/MutyalaHarshith/Media-Info-Bot",
+  "stack": "container",
+  "env": {
+    "API_ID": {
+      "description": "Your APP ID From my.telegram.org ",
+      "value": "",
+      "required": true
+    },
+
+    "API_HASH": {
+      "description": "Your API Hash From my.telegram.org ",
+      "value": "",
+      "required": true
+    },
+
+    "BOT_TOKEN": {
+      "description": "Your Bot Token From @BotFather",
+      "value": "",
+      "required": true
+    },
+
+    "SUDO_USERID": {
+      "description": "JSON list of Telegram user IDs who have full sudo (superuser) access to the bot.",
+      "value": "",
+      "required": true
+    },
+
+    "AUTHORIZED_CHATS": {
+      "description": "JSON list of chat IDs where the bot is allowed to work.",
+      "value": "",
+      "required": false
+    }
+  }
+}
